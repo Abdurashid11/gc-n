@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="music-player">
+    <h2>Music Player</h2>
+    <img id="cover" src="" alt="Cover Image" class="cover" />
+    <h3 id="title">Title</h3>
+    <p id="artist">Artist</p>
+
+    <select id="trackList" onchange="onTrackChange(this.value)"></select>
+
+    <div class="controls">
+      <button onclick="previous()">Previous</button>
+      <button onclick="togglePlayPause()" id="playPause">Play</button>
+      <button onclick="next()">Next</button>
+    </div>
+
+    <audio id="audio"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
